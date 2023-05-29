@@ -7,7 +7,7 @@ GoWatch is a CLI utility to check a program output (using **regex**) and send a 
 To install GoWatch, you have two options:
 ### Precompiled binaries
 
-Download it from the [releases page](https://github.com/cheina97/gowatch/releases/download/latest)
+Download it from the [releases page](https://github.com/cheina97/gowatch/releases/latest)
 
 ### Build from source
 
