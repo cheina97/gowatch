@@ -58,6 +58,7 @@ func main() {
 		os.Exit(1)
 	}
 
+	//nolint:gosec // This is a command specified by the user
 	cmd := exec.Command(flag.Arg(0), flag.Args()[1:]...)
 
 	w := watch.NewWatcher(cfg, cmd)

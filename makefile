@@ -9,7 +9,7 @@ endif
 fmt: gci addlicense
 	go mod tidy
 	go fmt ./...
-	find . -type f -name '*.go' -a ! -name '*zz_generated*' -exec $(GCI) write -s standard -s default -s "prefix(github.com/liqotech/liqo)" {} \;
+	find . -type f -name '*.go' -a ! -name '*zz_generated*' -exec $(GCI) write -s standard -s default -s "prefix(github.com/cheina97/gowatch)" {} \;
 	find . -type f -name '*.go' -exec $(ADDLICENSE) -l apache -c "cheina97" -y "2023-$(shell date +%Y)" {} \;
 
 lint: golangci-lint
